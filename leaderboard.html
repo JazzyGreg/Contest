@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Leaderboard</title>
+  <script type="module" src="leaderboard.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #leaderboard {
+      margin-top: 20px;
+    }
+    .user {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+    }
+    .vote-btn {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 15px;
+      cursor: pointer;
+    }
+    .vote-btn:hover {
+      background-color: #0b5ed7;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand mx-0" href="#">
+            <img src="./img/photo_2024-12-27_05-54-17-removebg-preview.png" alt="logo" width="80" height="60">
+          </a>
+          <!-- <a class="navbar-brand text-uppercase" href="#"></a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboard.html">Contest</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Disclaimer
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                  <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul> 
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <div class="d-grid gap-2 d-md-block">
+              <a class="btn btn-light text-uppercase px-md-5 mx-5" href="register.html" role="button">Login</a>
+            </div>
+            
+          </div>
+        </div>
+      
+      
+    </nav>
+  <h1 class=" text-center fw-bold mt-2">Leaderboard</h1>
+  <div class="container mt-4">
+
+    <p class="fs-6">
+      The Gamefinity Contest has attracted a diverse and talented group of players, each competing to rise to the top. Check out the profiles of top contenders and see where you stand!
+    </p>
+    <p class="fs-6">
+      The rankings are constantly shifting as contestants compete, level up, and unlock new challenges. Make sure to keep an eye on the leaderboard for the latest updates!
+      <strong>Good luck to all contestants — may the best Contestant win!</strong>
+    </p>
+    <h1 class="text-center fw-bold fs-2">Top contestants</h1>
+  </div>
+
+  <div id="leaderboard" class="container">
+    <!-- Users will be displayed here dynamically -->
+  </div>
+
+
+      <footer class="bg-dark py-5 mt-5">
+      <div class="container text-light text-start">
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="about.html">About Us</a>
+        </ul>
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="contact.html">Contact Us</a>
+        </ul>
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="privacy.html">Privacy Policy</a>
+        </ul>
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="terms.html">Terms & Conditions</a>
+        </ul>
+      </div>
+      <div class="container text-light text-center mt-5">
+        <p class="display-5 mb-3">Gamefinity</p>
+        
+      </div>  
+      <div class="container text-light text-center">
+        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover me-2" href="#"><i class="bi bi-instagram fs-4"></i></a>
+        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:gamefinity56@gmail.com"><i class="bi bi-envelope-at fs-4"></i></a>
+      </div>
+      <div class="container text-light text-center">
+        <small class="text-white-50">&copy; Copyright by Gamefinity. All rights reserved.</small>
+      </div>
+    </footer>
+</body>
+</html>

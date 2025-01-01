@@ -1,0 +1,160 @@
+[debug] [2024-12-31T16:15:23.140Z] ----------------------------------------------------------------------
+[debug] [2024-12-31T16:15:23.151Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-12-31T16:15:23.152Z] CLI Version:   13.29.1
+[debug] [2024-12-31T16:15:23.152Z] Platform:      win32
+[debug] [2024-12-31T16:15:23.152Z] Node Version:  v22.12.0
+[debug] [2024-12-31T16:15:23.153Z] Time:          Tue Dec 31 2024 08:15:23 GMT-0800 (Pacific Standard Time)
+[debug] [2024-12-31T16:15:23.153Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-31T16:15:23.260Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-31T16:15:23.261Z] > authorizing via signed-in user (jahskindnesso@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DELL
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-31T16:15:23.346Z] Using project from CLI flag: bionic-axon-385516
+[debug] [2024-12-31T16:15:23.351Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:23.351Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:23.354Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bionic-axon-385516 [none]
+[debug] [2024-12-31T16:15:24.914Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bionic-axon-385516 200
+[debug] [2024-12-31T16:15:24.915Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bionic-axon-385516 {"projectId":"bionic-axon-385516","projectNumber":"9483394900","displayName":"My First Project","name":"projects/bionic-axon-385516","resources":{"hostingSite":"bionic-axon-385516"},"state":"ACTIVE","etag":"1_6beb1ae8-733e-4fd3-b0ff-0da198d0d65e"}
+[info] i  Using project bionic-axon-385516 (My First Project) 
+[info] 
+=== Functions Setup
+[debug] [2024-12-31T16:15:24.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-31T16:15:24.923Z] > authorizing via signed-in user (jahskindnesso@gmail.com)
+[debug] [2024-12-31T16:15:24.923Z] [iam] checking project bionic-axon-385516 for permissions ["firebase.projects.get"]
+[debug] [2024-12-31T16:15:24.924Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:24.924Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:24.924Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions [none]
+[debug] [2024-12-31T16:15:24.924Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions x-goog-quota-user=projects/bionic-axon-385516
+[debug] [2024-12-31T16:15:24.924Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-31T16:15:26.110Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions 200
+[debug] [2024-12-31T16:15:26.110Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-31T16:15:26.112Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:26.112Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:26.113Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:26.113Z] Checked if tokens are valid: true, expires at: 1735663551780
+[debug] [2024-12-31T16:15:26.117Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-31T16:15:26.117Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/bionic-axon-385516
+[debug] [2024-12-31T16:15:26.121Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-31T16:15:26.122Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/bionic-axon-385516
+[debug] [2024-12-31T16:15:27.610Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-31T16:15:27.610Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-31T16:15:27.612Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-31T16:15:27.613Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[debug] [2024-12-31T17:52:57.631Z] ----------------------------------------------------------------------
+[debug] [2024-12-31T17:52:57.645Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-12-31T17:52:57.646Z] CLI Version:   13.29.1
+[debug] [2024-12-31T17:52:57.647Z] Platform:      win32
+[debug] [2024-12-31T17:52:57.647Z] Node Version:  v22.12.0
+[debug] [2024-12-31T17:52:57.648Z] Time:          Tue Dec 31 2024 09:52:57 GMT-0800 (Pacific Standard Time)
+[debug] [2024-12-31T17:52:57.648Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-31T17:52:57.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-31T17:52:57.858Z] > authorizing via signed-in user (jahskindnesso@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DELL
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-31T17:52:57.933Z] Using project from CLI flag: bionic-axon-385516
+[debug] [2024-12-31T17:52:57.938Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:52:57.939Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:52:57.941Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bionic-axon-385516 [none]
+[debug] [2024-12-31T17:52:59.629Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bionic-axon-385516 200
+[debug] [2024-12-31T17:52:59.630Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bionic-axon-385516 {"projectId":"bionic-axon-385516","projectNumber":"9483394900","displayName":"My First Project","name":"projects/bionic-axon-385516","resources":{"hostingSite":"bionic-axon-385516"},"state":"ACTIVE","etag":"1_6beb1ae8-733e-4fd3-b0ff-0da198d0d65e"}
+[info] i  Using project bionic-axon-385516 (My First Project) 
+[info] 
+=== Functions Setup
+[debug] [2024-12-31T17:52:59.643Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-31T17:52:59.644Z] > authorizing via signed-in user (jahskindnesso@gmail.com)
+[debug] [2024-12-31T17:52:59.644Z] [iam] checking project bionic-axon-385516 for permissions ["firebase.projects.get"]
+[debug] [2024-12-31T17:52:59.645Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:52:59.646Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:52:59.646Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions [none]
+[debug] [2024-12-31T17:52:59.646Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions x-goog-quota-user=projects/bionic-axon-385516
+[debug] [2024-12-31T17:52:59.647Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-31T17:53:01.117Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions 200
+[debug] [2024-12-31T17:53:01.118Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bionic-axon-385516:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-31T17:53:01.120Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:53:01.121Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:53:01.121Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:53:01.121Z] Checked if tokens are valid: true, expires at: 1735669950729
+[debug] [2024-12-31T17:53:01.122Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-31T17:53:01.122Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/bionic-axon-385516
+[debug] [2024-12-31T17:53:01.128Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-31T17:53:01.129Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/bionic-axon-385516
+[debug] [2024-12-31T17:53:02.985Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-31T17:53:02.986Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-31T17:53:03.219Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-31T17:53:03.219Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bionic-axon-385516/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default, functions
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] functions.codebase must be unique but 'functions' was used more than once.
+[error] functions.source must be unique but 'index.js' was used more than once.
+[debug] [2024-12-31T17:54:50.702Z] Error: ENOTDIR: not a directory, scandir 'C:\Users\DELL\contest'
+    at Object.readdirSync (node:fs:1502:26)
+    at Object.createFileSync (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:193:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: An unexpected error has occurred.

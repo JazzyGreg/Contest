@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="main.js" defer></script>
+    <title>Contest</title>
+    <style>
+          
+        h1{
+            text-align:center;
+
+        }
+        button{
+            color:blueviolet;
+            background-color:#c9d6ff;
+            padding:5px;
+            border-radius:5px;
+            font-size:1rem;
+            font-weight:bold;
+            border:none;
+        }
+        button:hover{
+            text-decoration: none;
+            color:blue;
+        }
+        button, div{
+            margin-left:15%;
+            font-size:20px;
+            padding:10px;
+        }
+        div{
+            font-weight:400;
+            color:rgb(12,11,11);
+
+        }
+        span{
+            font-weight:600;
+            font-size:22px;
+            color:black;
+        }
+        img{
+          max-width: 200px;
+        }
+
+        .copy-link {
+          --height: 36px;
+        
+          display: flex;
+          max-width: 250px;
+        }
+        
+        .copy-link-input {
+          flex-grow: 1;
+          padding: 0 8px;
+          font-size: 14px;
+          border: 1px solid #cccccc;
+          border-right: none;
+          outline: none;
+        }
+        
+        .copy-link-input:hover {
+          background: #eeeeee;
+        }
+        
+        .copy-link-button {
+          flex-shrink: 0;
+          width: var(--height);
+          height: var(--height);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #dddddd;
+          color: #333333;
+          outline: none;
+          border: 1px solid #cccccc;
+          cursor: pointer;
+        }
+        
+        .copy-link-button:hover {
+          background: #cccccc;
+        }
+        .myimg{
+          margin-left: 15%;
+        }
+        
+    </style>
+    <script type="module" src="./homepage.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand mx-0" href="#">
+            <img src="./img/photo_2024-12-27_05-54-17-removebg-preview.png" alt="logo" width="80" height="60">
+          </a>
+          <!-- <a class="navbar-brand text-uppercase" href="#"></a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboard.html">Contest</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Disclaimer
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                  <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul> 
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <!-- <div class="d-grid gap-2 d-md-block">
+              <button type="button" class="btn btn-light px-md-5 mx-5">Login</button>
+            </div> -->
+            
+          </div>
+        </div>
+      
+      
+    </nav>
+    <main>
+      <section>
+        <div class="container">
+          <h1>Welcome to the Homepage</h1>
+          <div class="shadow p-3 mb-5 ms-0 bg-body-tertiary rounded border">
+            <p class="fs-6 mt-5 fw-bold text-center">Edit Profile Picture</p>
+            <div class="text-center">
+              <input class="form-control form-control-sm user-img " type="file" id="image">
+            </div>
+            <img src="img/OIP (1).jpg" alt="Upload image" class="myimg">
+            <div>Name: <span class="l-user" id="loggedUserFName"></span> <span class="l-user" id="loggedUserLName"></span></div>
+            <div>Email: <span class="l-user" id="loggedUserEmail"></span></div>
+            
+            <a href="" class="btn btn-primary c-link1" role="button" id="copyLinkBtn">Copy Link</a>
+
+            <a onclick=`${sharePage()}`>
+              <i class="bi bi-facebook mx-2"></i>
+            </a>
+            <a onclick=`${sharePageOne()}`>
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a onclick=`${sharePageTwo()}`>
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" class="btn btn-primary mx-3" role="button">Vote</a>
+            <button class="btn btn-primary d-block mt-5" id="logout">Logout</button>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+    </main>
+    <footer class="bg-dark py-5 mt-5">
+      <div class="container text-light text-start">
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="about.html">About Us</a>
+        </ul>
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="contact.html">Contact Us</a>
+        </ul>
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="privacy.html">Privacy Policy</a>
+        </ul>
+        <ul>
+          <a class="link-offset-2 link-underline link-underline-opacity-0 link-light" href="terms.html">Terms & Conditions</a>
+        </ul>
+      </div>
+      <div class="container text-light text-center mt-5">
+        <p class="display-5 mb-3">Gamefinity</p>
+        
+      </div>  
+      <div class="container text-light text-center">
+        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover me-2" href="#"><i class="bi bi-instagram fs-4"></i></a>
+        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:gamefinity56@gmail.com"><i class="bi bi-envelope-at fs-4"></i></a>
+      </div>
+      <div class="container text-light text-center">
+        <small class="text-white-50">&copy; Copyright by Gamefinity. All rights reserved.</small>
+      </div>
+    </footer>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyA4XS7MGLDzQWeFK11ptKb7uyJkpXDTSH4",
+        authDomain: "gamefinity-1c564.firebaseapp.com",
+        projectId: "gamefinity-1c564",
+        storageBucket: "gamefinity-1c564.firebasestorage.app",
+        messagingSenderId: "785884343439",
+        appId: "1:785884343439:web:69e39af1319b1e857d14fa",
+        measurementId: "G-RVELKY5176"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+        const inputField = copyLinkParent.querySelector(".copy-link-input");
+        const copyButton = copyLinkParent.querySelector(".copy-link-button");
+        const text = inputField.value;
+      
+        inputField.addEventListener("focus", () => inputField.select());
+      
+        copyButton.addEventListener("click", () => {
+          inputField.select();
+          navigator.clipboard.writeText(text);
+      
+          inputField.value = "Copied!";
+          setTimeout(() => (inputField.value = text), 2000);
+        });
+      });
+      
+    </script>
+  </body>
+</html>
